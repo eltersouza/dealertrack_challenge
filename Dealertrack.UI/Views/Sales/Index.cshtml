@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-sm-12 col-md-7">
+        <h2>Sales</h2>
+    </div>
+    <div class="col-sm-12 col-md-5 margin-top-2 margin-bottom-1 align-right">
+        <button id="btnOpenImportPanel" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;&nbsp;Import a Sales File (.csv)</button>
+    </div>
+</div>
+
+<div id="pnlNoSales" class="panel panel-danger" style="display: none">
+    <div class="panel-heading">No Sales Registered</div>
+    <div class="panel-body">
+        There is no Sales registered in the database. You can Import a sales file by clicking the on the button above.
+    </div>
+</div>
+
+<div id="importPanel" class="panel panel-primary" style="display: none">
+    <div class="panel-heading">
+        <div class="pull-left">
+            Import a Sales File
+        </div>
+        <div class="pull-right">
+            <a id="btnClosePanel" class="link-primary" href="javascript:void(0);">close</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <button id="btnImportFile" class="btn btn-primary">Click here to choose a file</button>
+        <input type="file" id="hdnFile" class="hidden" accept=".csv" />
+        <input type="text" id="txtFileAddress" disabled class="file-name-placeholder" style="display:none;" />
+        <button id="btnUpload" class="btn btn-success" style="display:none;">Upload</button>
+        <span id="spnFileImportFeedback"></span>
+    </div>
+</div>
+
+<div class="row">
+    <table id="tblData" class="col-xs-12 table table-bordered" style="display: none;">
+        <thead>
+            <tr>
+                <th>Deal Number</th>
+                <th>Customer Name</th>
+                <th>Dealership Name</th>
+                <th>Vehicle</th>
+                <th>Price</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>

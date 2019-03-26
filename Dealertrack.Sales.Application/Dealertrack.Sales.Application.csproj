@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dealertrack.Sales.Domain\Dealertrack.Sales.Domain.csproj" />
+    <ProjectReference Include="..\Dealertrack.Sales.Infrastructure\Dealertrack.Sales.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
