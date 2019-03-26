@@ -29,6 +29,6 @@ How to use
 
 I created the solution to be a DDD Microservice-oriented solution. I didn't use Mediator and CQRS, though. It would be over-engineering, even for a experience evaluation code.
 
-For DI was going to use Autofac, but it seems to be unnecessary for this project, so I just used the native DI from .net core.
+For DI I was going to use Autofac, but it turned to be unnecessary for this project, so I just used the native DI from .net core.
 
 Thank you, I hope you like it. Feel free to contact me in case you have any doubts or information needs.
